@@ -9,6 +9,16 @@
         body {
             background-color: black;
         }
+        .img{
+            animation: img 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes img {
+            0%{transform: rotate(0deg);}
+            45%{transform: rotate(-35deg);}
+            60%{transform: rotate(45deg);}
+            80%{transform: rotate(-55deg);}
+        }
         .two {
             color: red;
         }
@@ -18,6 +28,8 @@
         .four {
             color: red;
         }
+        
+    
 
         .typewriter  {
             overflow: hidden;
@@ -41,6 +53,26 @@
             from, to { border-color: transparent }
             50% { border-color: black; }
         }
+        .btn{
+            padding: 7px;
+            border-radius: 12px;
+            color: green;
+            background-color: transparent;
+            border: 3px solid transparent;
+            animation: effect 1s;
+            animation-iteration-count: infinite;
+        }
+        .btn:hover{
+            border: 3px solid cyan;
+            box-sizing: border-box;
+        }
+        @keyframes effect {
+            0%{border-left: 3px solid #a60059;}
+            25%{border-top: 3px solid green;}
+            50%{border-right: 3px solid #d90026;}
+            75%{border-bottom: 3px solid #161ce9;}
+            100%{border:3px solid transparent;}
+        }
 
     </style>
 </head>
@@ -48,7 +80,7 @@
     <center>
         <br>
         <br>
-            <img src="https://j.top4top.io/p_21601gdhf1.jpg" alt="hell0" >
+            <img src="https://j.top4top.io/p_21601gdhf1.jpg" alt="hell0" class="img">
         <div class="two">
             <br>
             <br>
@@ -57,7 +89,7 @@
                 <span class="three">BY</span>
                 <span class="four">W0lVeS</span>
       <br><br>
-                <button onclick="alert(' We hacked for truth ')">Read our masssages</button>
+                <button onclick="alert(' We hacked for truth ')" class="btn">Read our masssages</button>
                 
             </div>
     
